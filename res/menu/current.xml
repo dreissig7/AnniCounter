@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<!--     <item  -->
+ <!--        android:id="@+id/refresh" -->
+<!--         android:orderInCategory="100" -->
+<!--         android:showAsAction="ifRoom|withText" -->
+<!--         android:title="@string/refresh"/>  -->
+
+<!-- <item android:id="@+id/menu_share"
+          android:title="@string/share"
+          android:showAsAction="ifRoom"
+          android:actionProviderClass="android.widget.ShareActionProvider" /> -->	
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="99"
+        android:icon="@android:drawable/ic_menu_share"
+        android:showAsAction="ifRoom"
+        android:title="@string/share"/>
+	
+    <item
+        android:id="@+id/nextAnnis"
+        android:orderInCategory="98"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/nextAnnis"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="withText|collapseActionView"
+        android:title="@string/action_settings"/>
+
+</menu>

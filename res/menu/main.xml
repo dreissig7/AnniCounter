@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/deleteAnni"
+        android:orderInCategory="90"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/deleteAnni"/>
+    <item
+        android:id="@+id/addAnni"
+        android:orderInCategory="91"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="withText|ifRoom"
+        android:title="@string/addAnni"/>
+
+</menu>

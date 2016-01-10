@@ -25,3 +25,12 @@ proguard/
 
 # Log Files
 *.log
+log.*
+
+# Thumbs.db files
+Thumbs.db
+
+.classpath
+.project
+.settings/org.eclipse.jdt.core.prefs
+*.jar

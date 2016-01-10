@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dreissig7.annicounter"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:backupAgent="MyBackupAgent"
+        android:restoreAnyVersion = "true">
+        <meta-data android:name="com.google.android.backup.api_key" android:value="" />
+        <activity
+            android:name="com.dreissig7.annicounter.Current"
+            android:label="@string/app_name"
+			android:parentActivityName="com.dreissig7.annicounter.MainActivity">
+			<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dreissig7.counter.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dreissig7.annicounter.SettingsActivity"
+            android:label="@string/action_settings_title"
+            android:parentActivityName="com.dreissig7.annicounter.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dreissig7.counter.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dreissig7.annicounter.NextAnnis"
+            android:label="@string/title_activity_next_annis"
+            android:parentActivityName="com.dreissig7.annicounter.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dreissig7.counter.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.dreissig7.annicounter.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
